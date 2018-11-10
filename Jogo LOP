@@ -1,0 +1,32 @@
+function setup() {
+  createCanvas(600 , 400);
+
+}
+x = 122;
+y = 270;
+function draw() { //desenha "jogador" e obstáculo
+  background(0);
+	fill(255);
+  ellipse(x, y,100, 222);
+  
+  fill(102);
+  rect(400, 310, 65, 65);
+	
+	
+}
+
+function keyPressed() // Responsável pela movimentação do "jogador"
+// com as teclas w ,s ,a e d
+{
+if (key == 'w'){
+y = y - 10;
+  
+}else if(key == 's'){
+y = y + 10;
+}else if (key == 'a'){
+x = x - 10;
+} else if (key == 'd'){
+x = x + 10;
+}
+
+}
